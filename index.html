@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="topo-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -201,6 +201,22 @@
       background-clip: text;
     }
 
+    /* aLLMost: Fraunces serif, full-spectrum gradient on LLM */
+    .card-allmost { --brand: #8B6BFF; font-family: 'Fraunces', serif; }
+    .card-allmost .card-name {
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+    .card-allmost .card-name .first,
+    .card-allmost .card-name .third { color: #F2EEE3; }
+    .card-allmost .card-name .second {
+      font-weight: 500;
+      background: linear-gradient(90deg, #8B6BFF 0%, #5C7BFF 16%, #5CDFFF 32%, #7FFAB1 48%, #FFE066 64%, #FFB347 76%, #FF8B7A 88%, #FF6B6B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
     /* ── Footer ───────────────────────────────────────────── */
     footer {
       margin-top: auto;
@@ -284,6 +300,17 @@
       <div class="card-body">
         <p class="card-desc">Chrome extension that shows your tabs in a horizontal strip. Click to switch, type to search, drag to reorder.</p>
         <span class="card-link">horizantaltabs.com &rarr;</span>
+      </div>
+    </a>
+
+    <a class="card card-allmost" href="https://allmost.app/" target="_blank" rel="noopener">
+      <div class="card-header">
+        <img class="card-icon" src="allmost-icon.png" alt="aLLMost">
+        <div class="card-name"><span class="first">a</span><span class="second">LLM</span><span class="third">ost</span></div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">Chrome extension that overlays intelligence on ChatGPT, Claude, Gemini, DeepSeek, Kimi, and Grok — semantic history search, auto-routing to the best model, and hedged-answer detection.</p>
+        <span class="card-link">allmost.app &rarr;</span>
       </div>
     </a>
 
