@@ -201,6 +201,12 @@
       background-clip: text;
     }
 
+    /* Wilee: Inter font, green accent, animated dot */
+    .card-wilee { --brand: #5DCAA5; font-family: 'Inter', sans-serif; }
+    .card-wilee .card-name { font-weight: 600; letter-spacing: -0.025em; }
+    .card-wilee .card-name .first { color: #F2EFE6; }
+    .card-wilee .card-name .second { color: #5DCAA5; }
+
     /* aLLMost: Fraunces serif, full-spectrum gradient on LLM */
     .card-allmost { --brand: #8B6BFF; font-family: 'Fraunces', serif; }
     .card-allmost .card-name {
@@ -303,9 +309,20 @@
       </div>
     </a>
 
+    <a class="card card-wilee" href="https://wilee.app/" target="_blank" rel="noopener">
+      <div class="card-header">
+        <img class="card-icon" src="wilee-icon.png" alt="Wilee">
+        <div class="card-name"><span class="first">wilee</span><span class="second">.</span></div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">Radial gesture menu for one-handed browsing. Hold, flick, release — every browser shortcut in the hand that's already on the mouse.</p>
+        <span class="card-link">wilee.app &rarr;</span>
+      </div>
+    </a>
+
     <a class="card card-allmost" href="https://allmost.app/" target="_blank" rel="noopener">
       <div class="card-header">
-        <img class="card-icon" src="allmost-icon.png" alt="aLLMost">
+        <img class="card-icon" src="icon-128.png" alt="aLLMost">
         <div class="card-name"><span class="first">a</span><span class="second">LLM</span><span class="third">ost</span></div>
       </div>
       <div class="card-body">
